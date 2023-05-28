@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastrar</title>
+</head>
+<body>
+
+	<div class= "cadastro">
+		<form method="post" action="/register/register">
+			<input type="text" name="usuario" id="usuario" placeholder="Digite um nome de usuario para sua conta" required="" autofocus/>
+			<input type="password" name="senha" id="senha"	placeholder="Digite uma senha para sua conta" required="" autofocus />
+
+			<div id="formcontainer">
+				<button type="submit" id="submit">Cadastrar usuario</button>
+			</div>
+		</form>
+	</div>
+	<style>
+		body{
+			margin: 0;
+			box-sizing: border-box;
+			background: linear-gradient(rgba(197, 89, 240, 0.94), #FF9800);
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		* {
+			font-family: Arial, Helvetica, sans-serif;
+			color: white;
+			
+		}
+		#formcontainer{
+			margin-top: 10vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		#submit{
+			cursor: pointer;
+			padding: 5%;
+			background-color: rgb(119, 95, 161);
+			border-radius: 8px;
+			border: 2px solid rgb(0, 0, 0);
+			margin-bottom: 2vh;
+		}
+		#submit:hover{
+			transition: 0.2s;
+			border: 2px solid rgba(62, 0, 177, 0.747);
+			cursor: pointer;
+			border-radius: 5px;
+		}
+
+		form{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		input::placeholder{
+			color: black;
+		}
+		.cadastro{
+			
+			background-color: rgba(0, 0, 0, 0.692);
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			padding: 5em;
+			max-height: 1900px;
+			margin: 5% 10%;
+			border: 2px solid rgb(0, 0, 0);
+			border-radius: 50px;
+			box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.596);
+		}
+
+		#usuario, #senha{
+			appearance: none;
+			width: 100%;
+			height: 3em;
+			border: none;
+			margin-bottom: 7vh;
+			text-align: center;
+			color: black;
+			cursor: pointer;
+			background-color: white;
+			border-radius: 10px;	
+			
+			
+
+		}
+		#usuario:focus-within, #senha:focus-within{
+			border: 2px solid rgb(59, 0, 153);
+			cursor: pointer;
+			border-radius: 5px;
+			outline: none;
+			color: black
+
+		}
+
+		#secondname:hover, #text-box:hover{
+			/*transition: 0.2s;*/
+			border: 2px solid rgba(62, 0, 177, 0.747);
+			cursor: pointer;
+		}
+		fieldset{
+			margin-bottom: 30%;
+		}
+		#formulario{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			background-color: #1f034c;
+			
+		}
+
+		@media (max-width: 3000px){
+			#submit{
+				width: 50vw;
+				max-width: 500px;
+				height: auto;
+				padding: 1rem;
+			}
+		}
+
+	</style>
+	
+</body>
